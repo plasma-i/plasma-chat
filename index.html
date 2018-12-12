@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Page Information Start -->
+		<title>Football Central | Home</title>
+
+		<meta charset="UTF-8">
+
+		<meta name="author" content="Group Name">
+		<meta name="description" content="Intro to Website Purpose & Objective">
+
+		<!-- External CSS Stylesheets -->
+		<link rel="stylesheet" href="https://w1710551.users.ecs.westminster.ac.uk/webDev/group/css/groupname.css">
+		<script src="https://w1710551.users.ecs.westminster.ac.uk/webDev/group/index.js"></script>
+		
+	</head>
+
+	<body>
+	
+	<!-- Top Bar Start -->
+		<!-- Navigation Bar Start -->	
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>	
+				<li><a href="entertainment.html">ENTERTAINMENT</a></li>	
+				<li><a href="store.html">STORE</a></li>	
+				<li><a href="contact.html">CONTACT</a></li>	
+			</ul>
+		</nav>		
+		<!-- Navigation Bar End -->
+
+		<!-- Main Content Start -->
+		<section id="content-section" class="col-max">
+			<p>
+				<center><iframe class="home-media" src="https://player.vimeo.com/video/78468485?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" frameborder="0"></iframe></center>
+				<h1 class="welcome"> Welcome </h1>
+				<br>
+				<p>Welcome to Football Central, here you can test your knowledge of what you know about Football & see what the highest score you can get is! You can also purchase Special Edition Sports Memoribilia we have found from around the globe! Or Share your views with other enthusiasts via Our Live Comments Section below!
+				<br>
+				</p>
+			</p>
+		</section>
+
+		<!-- JavaScript allows end user to view latest update to website | Group Members update via Private Login Portal which uses standard web encryption to encypt & decrypt updates -->
+		<section id="content-section" class="col-75">
+
+			<p>
+				<h1> COMMENTS </h1>
+				<br>
+				<ul id="messages"></ul>
+				<form action="">
+					<input id="m" class="col-75" autocomplete="off" />
+					<button id="submit-comment">SEND</button>
+				</form>
+				
+				<script src="/socket.io/socket.io.js"></script>
+    			<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+			    <script>
+			    	$(function () {
+			        	var socket = io();
+			        $('form').submit(function(){
+			       		socket.emit('chat message', $('#m').val());
+			       	$('#m').val('');
+		        		return false;
+			        });
+			        socket.on('chat message', function(msg){
+			         	$('#messages').append($('<li>').text(msg));
+			          	window.scrollTo(0, document.body.scrollHeight);
+			        });
+			      });
+			    </script>
+			</p>
+		</section>
+
+		<section id="content-section" class="col-25" id="updates">
+			<p>
+				<h1> Top Quiz Scores </h1>
+				<br>
+				<center>
+					<p id="scores">
+						<a href="updates.html">1 | PLAYER NAME <a/>
+						<br> 
+						<a href="updates.html">2 | PLAYER NAME<a/>
+						<br>
+						<a href="updates.html">3 | PLAYER NAME <a/>
+					</p>
+				</center>		
+			</p>
+		</section>		
+		
+		<!-- Main Content End -->
+
+		<!-- Footer Start -->
+
+		<!-- Footer End -->
+		
+	</body>
+</html>

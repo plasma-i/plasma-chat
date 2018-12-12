@@ -1,0 +1,210 @@
+/* ------ Cascading StyleSheet Document ------*/
+
+/* ------------------------------------------ */
+/* ----------- TABLE OF CONTENTS ------------ */
+/* ------------------------------------------ */
+/* 		  	01 | General					  */
+/*   		02 | Header & Navigation 	      */
+/*   		03 | Main Page      	    	  */
+/*   		04 | Footer	   		    	      */
+/*   		05 | Bootstrap Styles	    	  */
+
+/* ---------------------------------------- */
+/* ------------ 01 | General -------------- */
+/* ---------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+	
+body {
+	margin: 0;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 300;
+	background-color: black;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+section {
+	overflow: hidden;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+form { 
+	background: #000; 
+	padding: 3px; 
+	bottom: 0; 
+	width: 100%; 
+}
+
+form button { 
+	width: 9%; 
+	background: rgb(130, 224, 255); 
+	border: none; 
+	padding: 10px; 
+	float: left;
+}
+
+form input { 	
+	border: 0; 
+	padding: 10px; 
+	width: 90%; 
+	-right: .5%; 
+	float: left;
+}
+
+/* ---------------------------------------- */
+/* ------- 02 | Header & Navigation ------- */
+/* ---------------------------------------- */
+
+nav {
+	display: block;
+	background: black; 
+	width: 100%;
+	padding-bottom: 50px;
+	border-bottom-color: white;
+	position: fixed;
+}
+
+nav ul {
+	float: right;	
+	padding: 0; 
+	margin: 0;  
+	list-style-type: none;  
+}
+
+nav li { 
+	display: inline-block; 
+	font-size: 20px ;
+	padding: 8px;
+}
+
+nav a { 
+	display: inline-block; 
+	padding: 12px;  
+	text-decoration: none; 
+	color: #fff;
+}
+
+nav a:hover {  
+	text-decoration: none;
+	color: grey;
+}
+
+/* ---------------------------------------- */
+/* ----------- 03 | Main Page ------------- */
+/* ---------------------------------------- */
+
+.col-20 {
+	float: left;
+	width: 20% !important;
+}
+
+.col-25 {
+	float: left;
+	width: 25% !important;
+}
+
+.col-50 {
+	float: left;
+	width: 50% !important;
+}
+
+.col-75 {
+	float: left;
+	width: 75% !important;
+}
+
+.col-max {
+	float: left;
+	width: 100% !important;
+}
+
+.home-media {
+	border-radius: 25px;
+	padding: 20px;
+	width: max-width;
+}
+
+.row {
+	float: left;
+	width: max-width !important;
+	padding: 3px;
+}
+
+.welcome {
+
+}
+
+#content-section {
+	width: 100%;
+}
+
+#content-section p {
+	color: #fff;
+	padding: 8px;
+	width: 100%;
+}
+
+#content-section h1 {
+	text-align: center;
+	color: #fff;
+	size: 24px;
+	display: block;
+}
+
+#home-update {
+	width: auto;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	float: left;
+}
+
+#messages { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;
+	color: white;	
+}
+
+#messages li { 
+	padding: 5px 10px; 
+}
+
+#messages li:nth-child(odd) { 
+	background: #eee; 
+}
+
+#scores {
+	color: white;
+}
+
+#user {
+	width: 25px;
+	height: 25px;
+	float: left;
+	padding: 12px;
+	color: white;
+}
+
+#m {
+	width: 100%;
+	background-color: rgba(240, 221, 217, 0.4);
+	color: white;
+}
+
+/* ---------------------------------------- */
+/* ------------- 04 | Footer -------------- */
+/* ---------------------------------------- */

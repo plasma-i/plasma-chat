@@ -1,0 +1,17 @@
+{
+  "name": "my-comments",
+  "version": "1.0.0",
+  "description": "Socket IO using Node.JS Live Comments Section for Group University Project - w1710551",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "npm": "^6.5.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher A G Rees",
+  "license": "ISC"
+}
